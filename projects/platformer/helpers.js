@@ -14,6 +14,10 @@ function main() {
     deathOfPlayer();
     return;
   }
+  if (player.y > canvas.height) {
+    deathOfPlayer();
+    return;
+  }
 
   drawPlatforms();
   drawProjectiles();
